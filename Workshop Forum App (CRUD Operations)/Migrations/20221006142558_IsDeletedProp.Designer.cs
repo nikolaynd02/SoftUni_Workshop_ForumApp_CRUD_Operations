@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Workshop_Forum_App__CRUD_Operations_.Data;
 
@@ -10,9 +11,10 @@ using Workshop_Forum_App__CRUD_Operations_.Data;
 namespace Workshop_Forum_App__CRUD_Operations_.Migrations
 {
     [DbContext(typeof(ForumAppDbContext))]
-    partial class ForumAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221006142558_IsDeletedProp")]
+    partial class IsDeletedProp
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

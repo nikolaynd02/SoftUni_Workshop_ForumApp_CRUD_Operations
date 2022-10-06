@@ -15,7 +15,7 @@ namespace Workshop_Forum_App__CRUD_Operations_.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration<Post>(new PostConfiguration());
+            //modelBuilder.ApplyConfiguration<Post>(new PostConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
